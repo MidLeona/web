@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Main</title>
+  <style>
+      body {
+          background-image: url('background.png');
+          background-size: cover;
+          display: flex;
+          align-items: center;
+          justify-content: flex-start;
+          height: 100vh;
+          margin: 0;
+        }
+      .login-form {
+          width: 300px;
+          padding: 30px;
+          background: #ffffff;
+          box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.15);
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+      @media screen and (min-width: 600px) {
+        .login-form {
+          left: 200px;
+          transform: translateY(-50%);
+          }
+        }
+        .login-form input[type="text"], .login-form input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 25px;
+            border: 1px solid #ccc;
+        }
+        .login-form button[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #007BFF;
+            border: none;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-form">
+        <h2>환영합니다!</h2>
+        <form action="#" method="post">
+            <label for="Username">Username</label>
+            <input type="text" id="Username" name="Username" placeholder="Username" style="border-radius: 10px; border: 1px solid #D9D9D9; width: 93%;">
+            <div style="display: flex; justify-content: space-between; align-items: center;">
+                <label for="pw">Password</label>
+                <a href="#" style="float: right;">비밀번호 찾기</a>
+            </div>
+            <input type="password" id="pw" name="pw" placeholder="Password" style="border-radius: 10px; border: 1px solid #D9D9D9; width: 93%;">
+            <button type="submit" style="border-radius: 10px; border: 1px solid #22355B; background: #22355B; color: white; width: 100%;">Login</button>
+            <p style="text-align: center;">계정이 없으신가요? <a href="#">회원가입</a></p>
+        </form>
+    </div>
+</body>
+</html>
